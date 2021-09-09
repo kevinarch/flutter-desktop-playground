@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_desktop_playground/themes/main_theme.dart';
 import 'package:menubar/menubar.dart';
 import 'package:window_size/window_size.dart';
 
@@ -30,7 +31,7 @@ void main() {
 
 Future<void> initialization() async {
 
-  await Future.delayed(const Duration(seconds: 3));
+  await Future.delayed(const Duration(milliseconds: 1500));
 }
 
 class MainApp extends StatefulWidget {
@@ -68,6 +69,7 @@ class _MainAppState extends State<MainApp> {
         title: 'Cupito',
         initialRoute: HomePageScreenProvider.route,
         onGenerateRoute: RouteManager.routing,
+        theme: mainTheme,
       );
     }
 

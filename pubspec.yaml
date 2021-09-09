@@ -42,13 +42,14 @@ dependencies:
       path: plugins/menubar
       ref: 03d957e8b5c99fc83cd4a781031b154ab3de8753
 
-  fluentui_icons: ^1.0.0
+  fluentui_system_icons: ^1.1.138
   equatable: ^2.0.0
   flutter_bloc: ^7.0.0
   tuple: ^2.0.0
   flutter_dotenv: ^5.0.0
   shared_preferences: ^2.0.6
   flutter_svg: ^0.22.0
+  cached_network_image: ^3.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -79,6 +80,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - fonts/
     - assets/
     - assets/svg/
 
@@ -104,6 +106,35 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+
+  fonts:
+    - family: InterBlack
+      fonts:
+        - asset: fonts/Inter-Black.ttf
+    - family: InterBold
+      fonts:
+        - asset: fonts/Inter-Bold.ttf
+    - family: InterExtraBold
+      fonts:
+        - asset: fonts/Inter-ExtraBold.ttf
+    - family: InterExtraLight
+      fonts:
+        - asset: fonts/Inter-ExtraLight.ttf
+    - family: InterLight
+      fonts:
+        - asset: fonts/Inter-Light.ttf
+    - family: InterMedium
+      fonts:
+        - asset: fonts/Inter-Medium.ttf
+    - family: InterRegular
+      fonts:
+        - asset: fonts/Inter-Regular.ttf
+    - family: InterSemiBold
+      fonts:
+        - asset: fonts/Inter-SemiBold.ttf
+    - family: InterThin
+      fonts:
+        - asset: fonts/Inter-Thin.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
